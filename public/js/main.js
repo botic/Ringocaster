@@ -4,7 +4,8 @@ $(document).ready(function() {
             for (var i=0; i < navigator.plugins.length; i++ ) {
                 var plugin = navigator.plugins[i];
                 if (plugin.name.indexOf("QuickTime") > -1) {
-                    return true;
+                    var deviceAgent = (navigator.userAgent || "").toLowerCase();
+                    return !deviceAgent.match(/(iphone|ipod)/);
                 }
             }
         }

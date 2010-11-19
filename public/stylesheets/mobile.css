@@ -1,0 +1,27 @@
+html {
+    padding: 8px;
+    -webkit-text-size-adjust: none;
+}
+
+header h1 {
+   font-size: 1.25em;
+}
+
+header h2 {
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 12px;
+}
+
+.episodes article {
+    margin: 8px 0;
+}
+
+.episodes article:hover {
+    background: #F0F0F0; /* old browsers */
+    background: -moz-linear-gradient(top, #F0F0F0 0%, #ffffff 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F0F0F0), color-stop(100%,#ffffff)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F0F0F0', endColorstr='#ffffff',GradientType=0 ); /* ie */
+}

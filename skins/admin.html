@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Ringocaster Admin</title>
+
+   <script type="text/javascript" src="http://use.typekit.com/byf1ndn.js"></script>
+   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.2.0/build/cssreset/reset-min.css">
+   <link rel="stylesheet" href="/stylesheets/page.css" />
+   <script type="text/javascript" src="/js/main.js"></script>
+</head>
+<body>
+   
+   <div class="main">
+      <header role="banner">
+         <h1>Ringocaster Admin</h1>
+         <p>Manage your Podcast with the Ringocaster Admin.</p>
+      </header>
+      
+      <div class="admin" role="main">
+         <a href="<% admin.itunesPing %>">
+            <div class="item">
+               <h3>Ping iTunes</h3>
+               <h4>This will force the iTunes Store to reload your data.</h4>
+            </div>
+         </a>
+      </div>
+      
+      <footer role="contentinfo">
+        <p><% channel.copyright %></p>
+        <a id="itunesLink" href="">View in iTunes</a>
+        <div class="clearer"></div>
+      </footer>
+   </div>
+   
+</body>
+</html>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+<channel>
+   <title><% channel.title %></title>
+   <link><% channel.link %></link>
+   <language><% channel.language %></language>
+   <copyright><% channel.copyright %></copyright>
+   <itunes:subtitle><% channel.subtitle %></itunes:subtitle>
+   <itunes:author><% channel.author %></itunes:author>
+   <itunes:summary><% channel.description %></itunes:summary>
+   <description><% channel.description %></description>
+
+   <itunes:owner>
+      <itunes:name><% channel.author %></itunes:name>
+   </itunes:owner>
+
+   <itunes:image href="<% channel.image %>" />
+   <itunes:category text="<% channel.categoryTop %>">
+      <% channel.categorySub | prefix '<itunes:category text="' | suffix '"/>' %>
+   </itunes:category>
+   
+   <!-- Episodes -->
+   <% for episode in <% episodes %> render 'item' %>
+   <!-- End of Episodes -->
+   
+</channel>
+</rss>
+
+<% subskin item %>
+   <item>
+      <title><% episode.title %></title>
+      <itunes:author><% episode.author %></itunes:author>
+      <itunes:subtitle><% episode.subtitle %></itunes:subtitle>
+      <itunes:summary><% episode.summary %></itunes:summary>
+      <description><% episode.summary %></description>
+      <enclosure url="<% episode.enclosure.url %>" length="<% episode.enclosure.length %>" type="<% episode.enclosure.mimeType %>" />
+      <guid><% episode.enclosure.url %></guid>
+      <pubDate><% episode.pubdate %></pubDate>
+      <itunes:duration><% episode.duration %></itunes:duration>
+      <itunes:keywords><% episode.keywords %></itunes:keywords>
+   </item>
+   

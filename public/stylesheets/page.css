@@ -43,7 +43,7 @@ header h2 {
 }
 
 .episodes article {
-    margin: 10px 0 18px;
+    margin: 10px 0 14px 0;
     padding: 8px 10px;
     
     -moz-border-radius: 9px;
@@ -64,11 +64,13 @@ header h2 {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E3EBF4', endColorstr='#EDF1F7',GradientType=0 ); /* ie */
 }
 
+.admin h3,
 .episodes article  h3 {
     font-family: "museo-slab-1","museo-slab-2",serif;
     font-size: 1em;
 }
 
+.admin h4,
 .episodes article h4 {
     font-family: "museo-slab-1","museo-slab-2",serif;
     font-weight: normal;
@@ -90,6 +92,15 @@ header h2 {
     font-size: 0.88em;
 }
 
+.episodes .details .metadata {
+    font-size: 0.75em;
+    margin-top: 8px;
+    padding-top: 6px;
+    padding-left: 2px;
+    border-top: 1px solid #c0c0c0;
+    color: #8f8f8f;
+}
+
 .episodes .player {
     margin-top: 14px;
 }
@@ -108,4 +119,60 @@ footer {
     border-top: 1px solid #afafaf;
     margin-top: 10px;
     padding-top: 6px;
+}
+
+footer p {
+    float: right;
+}
+
+#itunesLink {
+    float: left;
+    background: url('../images/rss-icon.png') 1px right no-repeat;
+    padding-right: 16px;
+    margin-right: 1px;
+}
+
+a#itunesLink {
+    color: #551A8B;
+    text-decoration: none;
+}
+
+a#itunesLink:hover {
+    color: #222;
+}
+
+.clearer {
+    clear: both;
+}
+
+/** ADMIN **/
+.admin a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.admin .item {
+    margin: 10px 0 14px 0;
+    padding: 8px 10px;
+    
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    border: 1px solid #eee;
+    
+    background: #F0F0F0; /* old browsers */
+    background: -moz-linear-gradient(top, #F0F0F0 0%, #ffffff 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F0F0F0), color-stop(100%,#ffffff)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F0F0F0', endColorstr='#ffffff',GradientType=0 ); /* ie */
+}
+
+.admin .item:hover {
+    cursor: pointer;
+    background: #ffeeee; /* old browsers */
+    background: -moz-linear-gradient(top, #ffaa99 0%, #ff6666 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffaa99), color-stop(100%,#ff6666)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaa99', endColorstr='#ff6666',GradientType=0 ); /* ie */
+}
+
+.admin .item:hover h4 {
+    color: #444;
 }
