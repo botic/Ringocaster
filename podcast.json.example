@@ -1,0 +1,61 @@
+{
+   "admin": {
+      "itunesPing": "https://phobos.apple.com/WebObjects/MZFinance.woa/wa/pingPodcast?id=xxxxxxxxx"
+   },
+   "channel": {
+      "title": "Austrian Photography Podcast",
+      "link": "http://urltopodcast.at",
+      "language": "de",
+      "author": "Philipp Naderer",
+      "copyright": "&#xA9; Philipp Naderer",
+      "subtitle": "Podcast über österreichische Fotografie",
+      "description": "Test",
+      "image": "http://previewimage.at",
+      "categoryTop": "Arts",
+      "categorySub": "Visual Arts"
+   },
+   "episodes": [
+      {
+         "title": "Rene Burri - Fotografien",
+         "subtitle": "Zur Ausstellung im Kunsthaus Wien",
+         "summary": "Long text in html...",
+         "author": "Philipp Naderer",
+         "enclosure": {
+            "url": "http://naderer.biz/podcast/Austrian_Photography_Podcast/Media/Liankevich-Focus-on-Belarus.m4a",
+            "mimeType": "audio/x-m4a",
+            "length": 123456
+         },
+         "pubdate": "Wed, 15 Jun 2005 19:00:00 GMT",
+         "duration": "7:05",
+         "keywords": "Podcast Episode 1"
+      },
+      {
+         "title": "World Press Photo 2010",
+         "subtitle": "Austrian Photography Treffen",
+         "summary": "Long text in html...",
+         "author": "Philipp Naderer",
+         "enclosure": {
+            "url": "http://naderer.biz/podcast/Austrian_Photography_Podcast/Media/Liankevich-Focus-on-Belarus.m4a",
+            "mimeType": "audio/x-m4a",
+            "length": 123456
+         },
+         "pubdate": "Wed, 15 Jun 2005 19:00:00 GMT",
+         "duration": "7:05",
+         "keywords": "Podcast Episode 1"
+      },
+      {
+         "title": "Andrei Liankevich - Focus on Belarus",
+         "subtitle": "Subtitle",
+         "summary": "Long text in html...",
+         "author": "Philipp Naderer",
+         "enclosure": {
+            "url": "http://naderer.biz/podcast/Austrian_Photography_Podcast/Media/Liankevich-Focus-on-Belarus.m4a",
+            "mimeType": "audio/x-m4a",
+            "length": 123456
+         },
+         "pubdate": "Wed, 15 Jun 2005 19:00:00 GMT",
+         "duration": "7:05",
+         "keywords": "Podcast Episode 1"
+      }
+   ]
+}

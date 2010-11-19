@@ -1,0 +1,31 @@
+exports.urls = [
+    ['/', require('actions')],
+];
+
+exports.middleware = [
+    require('ringo/middleware/gzip').middleware,
+    require('ringo/middleware/etag').middleware,
+    require('ringo/middleware/static').middleware(module.resolve('public')),
+    // require('ringo/middleware/responselog').middleware,
+    require('ringo/middleware/error').middleware('skins/error.html'),
+    require('ringo/middleware/notfound').middleware('skins/notfound.html'),
+    require('ringo/middleware/basicauth').middleware(authConfig),
+];
+
+exports.app = require('ringo/webapp').handleRequest;
+
+exports.macros = [
+    require('ringo/skin/macros'),
+    require('ringo/skin/filters'),
+];
+
+exports.charset = 'UTF-8';
+exports.contentType = 'text/html';
+
+exports.podcastFile = module.resolve('podcast.json');
+
+var authConfig = {
+    '/admin': {
+        admin: "e5e9fa1ba31ecd1ae84f75caaa474f3a663f05f4" // "secret"
+    }
+};
