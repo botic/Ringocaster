@@ -12,3 +12,11 @@ function readPodcast() {
 exports.index = function (req) {
     return Response.skin(module.resolve('skins/base.html'), readPodcast());
 };
+
+exports.podcast_xml = function (req) {
+    return Response.skin(module.resolve('skins/podcast.xml'), readPodcast());
+};
+
+exports.admin = function (req) {
+    return Response.skin(module.resolve('skins/admin.html'), readPodcast());
+};
