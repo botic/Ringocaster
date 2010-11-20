@@ -42,7 +42,7 @@
       
       <footer role="contentinfo">
         <p><% channel.copyright %></p>
-        <a id="itunesLink" href="">Subscribe in iTunes</a>
+        <a id="itunesLink" href="<% admin.itunesUrl %>">Subscribe in iTunes</a>
         <div class="clearer"></div>
       </footer>
    </div>
@@ -52,11 +52,13 @@
 
 <% subskin item %>
 <article role="article">
-   <h3><% episode.title %></h3>
-   <h4><% episode.subtitle %></h4>
+   <div class="clickable">
+      <h3><% episode.title %></h3>
+      <h4><% episode.subtitle %></h4>
+      <p><% episode.summary %></p>
+   </div>
    
    <div class="details">
-      <p><% episode.summary %></p>
       <div class="player" data-file="<% episode.enclosure.url %>"></div>
       
       <div class="metadata">

@@ -61,11 +61,14 @@ header p {
 }
 
 .episodes article:hover {
-    cursor: pointer;
     background: #EBFFD1; /* old browsers */
     background: -moz-linear-gradient(top, #E3EBF4 0%, #EDF1F7 100%); /* firefox */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E3EBF4), color-stop(100%,#EDF1F7)); /* webkit */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E3EBF4', endColorstr='#EDF1F7',GradientType=0 ); /* ie */
+}
+
+.episodes article .clickable {
+    cursor: pointer;
 }
 
 .admin h3,
@@ -83,17 +86,16 @@ header p {
 }
 
 .episodes .details {
-    cursor: pointer;
     display: none;
-    margin-top: 8px;
 }
 
 .episodes article.expanded .details {
     display: block;
 }
 
-.episodes article p {
+.episodes article .clickable p {
     font-size: 0.88em;
+    margin-top: 8px;
 }
 
 .episodes .details .metadata {

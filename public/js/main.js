@@ -14,7 +14,7 @@ $(document).ready(function() {
     
     var embedCode = function(file) {
         if (hasQuickTime) {
-            return '<object id="id3" type="video/quicktime" width="300" height="316" data="' + file + '">\
+            return '<object class="qtplayer" type="video/quicktime" width="300" height="316" data="' + file + '">\
                <param name="src" value="' + file + '">\
                <param name="controller" value="true">\
                <param name="autoplay" value="false">\
@@ -33,7 +33,7 @@ $(document).ready(function() {
         $this.html(embedCode($this.data("file")));
     });
     
-    $(".episodes article").click(function(e) {
-       $(this).toggleClass("expanded"); 
+    $(".episodes article .clickable").bind("click", function(e) {
+        $(this).closest("article").toggleClass("expanded"); 
     });
 });
