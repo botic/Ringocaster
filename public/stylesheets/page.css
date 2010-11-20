@@ -25,7 +25,11 @@ h2 {
 }
 
 header h2 {
-    margin: 2px 0 16px 0;
+    margin: 2px 0 14px 0;
+}
+
+header p {
+    margin-bottom: 14px;
 }
 
 .main {
